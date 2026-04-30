@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="design95"
+run/main_scene="uid://eul2yj6ii2t0"
+config/features=PackedStringArray("4.6", "Mobile")
+config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="design95"
+
+[gui]
+
+theme/custom="res://theme/webcore_theme.tres"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[autoload]
+
+ThemeSetup="*res://theme/ThemeSetup.gd"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="mobile"

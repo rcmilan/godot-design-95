@@ -1,0 +1,177 @@
+[gd_scene format=3 uid="uid://eul2yj6ii2t0"]
+
+[node name="Main" type="Panel" unique_id=102736122]
+offset_left = 529.0
+offset_top = 276.0
+offset_right = 529.0
+offset_bottom = 276.0
+
+[node name="Layout" type="VBoxContainer" parent="." unique_id=279076569]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuBar" type="Panel" parent="Layout" unique_id=1588834856]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+theme_type_variation = &"MenuBar"
+
+[node name="HBox" type="HBoxContainer" parent="Layout/MenuBar" unique_id=1948158343]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="File" type="Button" parent="Layout/MenuBar/HBox" unique_id=1639946581]
+layout_mode = 2
+text = "File"
+
+[node name="Edit" type="Button" parent="Layout/MenuBar/HBox" unique_id=1352336239]
+layout_mode = 2
+text = "Edit"
+
+[node name="View" type="Button" parent="Layout/MenuBar/HBox" unique_id=1846163479]
+layout_mode = 2
+text = "View"
+
+[node name="WorkArea" type="Control" parent="Layout" unique_id=911636198]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Window" type="Panel" parent="Layout/WorkArea" unique_id=314372172]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -190.0
+offset_top = -130.0
+offset_right = 190.0
+offset_bottom = 130.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_type_variation = &"WindowPanel"
+
+[node name="VBox" type="VBoxContainer" parent="Layout/WorkArea/Window" unique_id=421077831]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleBar" type="Panel" parent="Layout/WorkArea/Window/VBox" unique_id=1412949628]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_type_variation = &"TitleBarActive"
+
+[node name="TitleHBox" type="HBoxContainer" parent="Layout/WorkArea/Window/VBox/TitleBar" unique_id=81708789]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_right = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox" unique_id=934111251]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"TitleBarLabel"
+text = "webcore-ui.exe"
+
+[node name="WinButtons" type="HBoxContainer" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox" unique_id=1844764199]
+layout_mode = 2
+
+[node name="Minimize" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=1892384273]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+text = "_"
+
+[node name="Maximize" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=2058475626]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+text = "□"
+
+[node name="Close" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=129647416]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+text = "X"
+
+[node name="ContentPanel" type="Panel" parent="Layout/WorkArea/Window/VBox" unique_id=810398443]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ContentVBox" type="VBoxContainer" parent="Layout/WorkArea/Window/VBox/ContentPanel" unique_id=1994984590]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = -8.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ControlsLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=1915035398]
+layout_mode = 2
+text = "Controls"
+
+[node name="InputField" type="LineEdit" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=660161085]
+layout_mode = 2
+placeholder_text = "Type something..."
+
+[node name="ButtonRow" type="HBoxContainer" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=772190771]
+layout_mode = 2
+
+[node name="OK" type="Button" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ButtonRow" unique_id=1334741310]
+layout_mode = 2
+text = "OK"
+
+[node name="Cancel" type="Button" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ButtonRow" unique_id=160723770]
+layout_mode = 2
+text = "Cancel"
+
+[node name="Divider" type="HSeparator" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=677082172]
+layout_mode = 2
+
+[node name="ExampleLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=1157775239]
+layout_mode = 2
+text = "Example"
+
+[node name="DescLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=787907415]
+layout_mode = 2
+text = "This is a Windows 95 style UI system built with Godot 4."
+autowrap_mode = 3
+
+[node name="StatusBar" type="Panel" parent="Layout/WorkArea/Window/VBox" unique_id=820560241]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+
+[node name="StatusHBox" type="HBoxContainer" parent="Layout/WorkArea/Window/VBox/StatusBar" unique_id=64770264]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Ready" type="Button" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=206782872]
+layout_mode = 2
+text = "Ready"
+
+[node name="Version" type="Button" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=1113385874]
+layout_mode = 2
+text = "v1.0"

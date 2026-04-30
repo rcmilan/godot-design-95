@@ -1,0 +1,34 @@
+[gd_resource type="Theme" format=3 uid="uid://b01rmjiy8be4k"]
+
+[ext_resource type="StyleBox" path="res://theme/button/button_normal_texture.tres" id="1"]
+[ext_resource type="StyleBox" path="res://theme/button/button_pressed_texture.tres" id="2"]
+[ext_resource type="FontFile" uid="uid://fru4c3uo56kd" path="res://fonts/W95FA.otf" id="3"]
+[ext_resource type="StyleBox" path="res://theme/panel/panel_style.tres" id="4"]
+[ext_resource type="StyleBox" path="res://theme/window/window_style.tres" id="5"]
+[ext_resource type="StyleBox" path="res://theme/titlebar/titlebar_style_active.tres" id="6"]
+[ext_resource type="StyleBox" path="res://theme/titlebar/titlebar_style_inactive.tres" id="7"]
+[ext_resource type="StyleBox" path="res://theme/menubar/menubar_style.tres" id="8"]
+
+[sub_resource type="StyleBoxEmpty" id="1"]
+
+[resource]
+default_font = ExtResource("3")
+default_font_size = 12
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0.4, 0.4, 0.4, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/styles/disabled = ExtResource("1")
+Button/styles/focus = SubResource("1")
+Button/styles/hover = ExtResource("1")
+Button/styles/hover_pressed = ExtResource("2")
+Button/styles/normal = ExtResource("1")
+Button/styles/pressed = ExtResource("2")
+MenuBar/styles/panel = ExtResource("8")
+Panel/styles/panel = ExtResource("4")
+TitleBarActive/styles/panel = ExtResource("6")
+TitleBarInactive/styles/panel = ExtResource("7")
+TitleBarLabel/colors/font_color = Color(1, 1, 1, 1)
+WindowPanel/styles/panel = ExtResource("5")
