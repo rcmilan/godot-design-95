@@ -1,0 +1,7 @@
+[gd_resource type="FontVariation" format=3]
+
+[ext_resource type="FontFile" uid="uid://fru4c3uo56kd" path="res://fonts/W95FA.otf" id="1"]
+
+[resource]
+base_font = ExtResource("1")
+spacing_glyph = 1

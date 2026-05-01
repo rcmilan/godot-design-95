@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://eul2yj6ii2t0"]
 
+[sub_resource type="ButtonGroup" id="RadioGroup1"]
+
 [node name="Main" type="Panel" unique_id=102736122]
-offset_left = 529.0
-offset_top = 276.0
-offset_right = 529.0
-offset_bottom = 276.0
+offset_left = 302.0
+offset_top = 171.0
+offset_right = 302.0
+offset_bottom = 171.0
 
 [node name="Layout" type="VBoxContainer" parent="." unique_id=279076569]
 layout_mode = 1
@@ -17,27 +19,7 @@ grow_vertical = 2
 [node name="MenuBar" type="Panel" parent="Layout" unique_id=1588834856]
 custom_minimum_size = Vector2(0, 22)
 layout_mode = 2
-theme_type_variation = &"MenuBar"
-
-[node name="HBox" type="HBoxContainer" parent="Layout/MenuBar" unique_id=1948158343]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="File" type="Button" parent="Layout/MenuBar/HBox" unique_id=1639946581]
-layout_mode = 2
-text = "File"
-
-[node name="Edit" type="Button" parent="Layout/MenuBar/HBox" unique_id=1352336239]
-layout_mode = 2
-text = "Edit"
-
-[node name="View" type="Button" parent="Layout/MenuBar/HBox" unique_id=1846163479]
-layout_mode = 2
-text = "View"
+theme_type_variation = &"Win95MenuBar"
 
 [node name="WorkArea" type="Control" parent="Layout" unique_id=911636198]
 layout_mode = 2
@@ -97,16 +79,19 @@ layout_mode = 2
 [node name="Minimize" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=1892384273]
 custom_minimum_size = Vector2(16, 0)
 layout_mode = 2
+theme_type_variation = &"TitleBarButton"
 text = "_"
 
 [node name="Maximize" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=2058475626]
 custom_minimum_size = Vector2(16, 0)
 layout_mode = 2
+theme_type_variation = &"TitleBarButton"
 text = "□"
 
 [node name="Close" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=129647416]
 custom_minimum_size = Vector2(16, 0)
 layout_mode = 2
+theme_type_variation = &"TitleBarButton"
 text = "X"
 
 [node name="ContentPanel" type="Panel" parent="Layout/WorkArea/Window/VBox" unique_id=810398443]
@@ -127,6 +112,7 @@ grow_vertical = 2
 
 [node name="ControlsLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=1915035398]
 layout_mode = 2
+theme_type_variation = &"SectionLabel"
 text = "Controls"
 
 [node name="InputField" type="LineEdit" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=660161085]
@@ -149,12 +135,68 @@ layout_mode = 2
 
 [node name="ExampleLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=1157775239]
 layout_mode = 2
+theme_type_variation = &"SectionLabel"
 text = "Example"
 
 [node name="DescLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=787907415]
+custom_minimum_size = Vector2(1, 0)
 layout_mode = 2
 text = "This is a Windows 95 style UI system built with Godot 4."
 autowrap_mode = 3
+
+[node name="Divider2" type="HSeparator" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456001]
+layout_mode = 2
+
+[node name="OptionsLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456002]
+layout_mode = 2
+theme_type_variation = &"SectionLabel"
+text = "Options"
+
+[node name="ColumnsHBox" type="HBoxContainer" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456006]
+layout_mode = 2
+
+[node name="RadioVBox" type="VBoxContainer" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox" unique_id=123456007]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RadioA" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/RadioVBox" unique_id=123456003]
+layout_mode = 2
+theme_type_variation = &"RadioButton"
+button_pressed = true
+button_group = SubResource("RadioGroup1")
+text = "Option A"
+
+[node name="RadioB" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/RadioVBox" unique_id=123456004]
+layout_mode = 2
+theme_type_variation = &"RadioButton"
+button_group = SubResource("RadioGroup1")
+text = "Option B"
+
+[node name="RadioC" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/RadioVBox" unique_id=123456005]
+layout_mode = 2
+theme_type_variation = &"RadioButton"
+button_group = SubResource("RadioGroup1")
+text = "Option C"
+
+[node name="CheckVBox" type="VBoxContainer" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox" unique_id=123456008]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CheckA" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/CheckVBox" unique_id=123456009]
+layout_mode = 2
+theme_type_variation = &"Win95Checkbox"
+text = "Check A"
+
+[node name="CheckB" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/CheckVBox" unique_id=123456010]
+layout_mode = 2
+theme_type_variation = &"Win95Checkbox"
+button_pressed = true
+text = "Check B"
+
+[node name="CheckC" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/CheckVBox" unique_id=123456011]
+layout_mode = 2
+theme_type_variation = &"Win95Checkbox"
+text = "Check C"
 
 [node name="StatusBar" type="Panel" parent="Layout/WorkArea/Window/VBox" unique_id=820560241]
 custom_minimum_size = Vector2(0, 20)
@@ -168,10 +210,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Ready" type="Button" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=206782872]
+[node name="Ready" type="Label" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=206782872]
 layout_mode = 2
+size_flags_horizontal = 3
 text = "Ready"
 
-[node name="Version" type="Button" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=1113385874]
+[node name="Version" type="Label" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=1113385874]
 layout_mode = 2
 text = "v1.0"

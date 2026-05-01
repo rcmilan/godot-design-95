@@ -15,6 +15,16 @@ run/main_scene="uid://eul2yj6ii2t0"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ThemeSetup="*res://theme/ThemeSetup.gd"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/stretch/mode="viewport"
+
 [dotnet]
 
 project/assembly_name="design95"
@@ -23,16 +33,17 @@ project/assembly_name="design95"
 
 theme/custom="res://theme/webcore_theme.tres"
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
-
-[autoload]
-
-ThemeSetup="*res://theme/ThemeSetup.gd"
 
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
