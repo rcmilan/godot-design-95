@@ -152,24 +152,51 @@ layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "Options"
 
-[node name="RadioA" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456003]
+[node name="ColumnsHBox" type="HBoxContainer" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456006]
+layout_mode = 2
+
+[node name="RadioVBox" type="VBoxContainer" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox" unique_id=123456007]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RadioA" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/RadioVBox" unique_id=123456003]
 layout_mode = 2
 theme_type_variation = &"RadioButton"
 button_pressed = true
 button_group = SubResource("RadioGroup1")
 text = "Option A"
 
-[node name="RadioB" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456004]
+[node name="RadioB" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/RadioVBox" unique_id=123456004]
 layout_mode = 2
 theme_type_variation = &"RadioButton"
 button_group = SubResource("RadioGroup1")
 text = "Option B"
 
-[node name="RadioC" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456005]
+[node name="RadioC" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/RadioVBox" unique_id=123456005]
 layout_mode = 2
 theme_type_variation = &"RadioButton"
 button_group = SubResource("RadioGroup1")
 text = "Option C"
+
+[node name="CheckVBox" type="VBoxContainer" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox" unique_id=123456008]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="CheckA" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/CheckVBox" unique_id=123456009]
+layout_mode = 2
+theme_type_variation = &"Win95Checkbox"
+text = "Check A"
+
+[node name="CheckB" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/CheckVBox" unique_id=123456010]
+layout_mode = 2
+theme_type_variation = &"Win95Checkbox"
+button_pressed = true
+text = "Check B"
+
+[node name="CheckC" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox/ColumnsHBox/CheckVBox" unique_id=123456011]
+layout_mode = 2
+theme_type_variation = &"Win95Checkbox"
+text = "Check C"
 
 [node name="StatusBar" type="Panel" parent="Layout/WorkArea/Window/VBox" unique_id=820560241]
 custom_minimum_size = Vector2(0, 20)
