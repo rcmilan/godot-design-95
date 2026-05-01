@@ -97,16 +97,19 @@ layout_mode = 2
 [node name="Minimize" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=1892384273]
 custom_minimum_size = Vector2(16, 0)
 layout_mode = 2
+theme_type_variation = &"TitleBarButton"
 text = "_"
 
 [node name="Maximize" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=2058475626]
 custom_minimum_size = Vector2(16, 0)
 layout_mode = 2
+theme_type_variation = &"TitleBarButton"
 text = "□"
 
 [node name="Close" type="Button" parent="Layout/WorkArea/Window/VBox/TitleBar/TitleHBox/WinButtons" unique_id=129647416]
 custom_minimum_size = Vector2(16, 0)
 layout_mode = 2
+theme_type_variation = &"TitleBarButton"
 text = "X"
 
 [node name="ContentPanel" type="Panel" parent="Layout/WorkArea/Window/VBox" unique_id=810398443]
@@ -127,6 +130,7 @@ grow_vertical = 2
 
 [node name="ControlsLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=1915035398]
 layout_mode = 2
+theme_type_variation = &"SectionLabel"
 text = "Controls"
 
 [node name="InputField" type="LineEdit" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=660161085]
@@ -149,6 +153,7 @@ layout_mode = 2
 
 [node name="ExampleLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=1157775239]
 layout_mode = 2
+theme_type_variation = &"SectionLabel"
 text = "Example"
 
 [node name="DescLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=787907415]
@@ -168,10 +173,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Ready" type="Button" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=206782872]
+[node name="Ready" type="Label" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=206782872]
 layout_mode = 2
+size_flags_horizontal = 3
 text = "Ready"
 
-[node name="Version" type="Button" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=1113385874]
+[node name="Version" type="Label" parent="Layout/WorkArea/Window/VBox/StatusBar/StatusHBox" unique_id=1113385874]
 layout_mode = 2
 text = "v1.0"

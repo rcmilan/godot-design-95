@@ -8,6 +8,10 @@
 [ext_resource type="StyleBox" path="res://theme/titlebar/titlebar_style_active.tres" id="6"]
 [ext_resource type="StyleBox" path="res://theme/titlebar/titlebar_style_inactive.tres" id="7"]
 [ext_resource type="StyleBox" path="res://theme/menubar/menubar_style.tres" id="8"]
+[ext_resource type="StyleBox" path="res://theme/button/button_titlebar_normal_texture.tres" id="9"]
+[ext_resource type="StyleBox" path="res://theme/button/button_titlebar_pressed_texture.tres" id="10"]
+[ext_resource type="StyleBox" path="res://theme/lineedit/lineedit_style.tres" id="11"]
+[ext_resource type="FontVariation" path="res://theme/fonts/W95FA_section.tres" id="12"]
 
 [sub_resource type="StyleBoxEmpty" id="1"]
 
@@ -26,9 +30,27 @@ Button/styles/hover = ExtResource("1")
 Button/styles/hover_pressed = ExtResource("2")
 Button/styles/normal = ExtResource("1")
 Button/styles/pressed = ExtResource("2")
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/styles/focus = ExtResource("11")
+LineEdit/styles/normal = ExtResource("11")
+LineEdit/styles/read_only = ExtResource("11")
 MenuBar/styles/panel = ExtResource("8")
 Panel/styles/panel = ExtResource("4")
+SectionLabel/colors/font_color = Color(0, 0, 0, 1)
+SectionLabel/font_sizes/font_size = 13
+SectionLabel/fonts/font = ExtResource("12")
 TitleBarActive/styles/panel = ExtResource("6")
+TitleBarButton/colors/font_color = Color(0, 0, 0, 1)
+TitleBarButton/colors/font_focus_color = Color(0, 0, 0, 1)
+TitleBarButton/colors/font_hover_color = Color(0, 0, 0, 1)
+TitleBarButton/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+TitleBarButton/colors/font_pressed_color = Color(0, 0, 0, 1)
+TitleBarButton/styles/disabled = ExtResource("9")
+TitleBarButton/styles/focus = SubResource("1")
+TitleBarButton/styles/hover = ExtResource("9")
+TitleBarButton/styles/hover_pressed = ExtResource("10")
+TitleBarButton/styles/normal = ExtResource("9")
+TitleBarButton/styles/pressed = ExtResource("10")
 TitleBarInactive/styles/panel = ExtResource("7")
 TitleBarLabel/colors/font_color = Color(1, 1, 1, 1)
 WindowPanel/styles/panel = ExtResource("5")
