@@ -3,6 +3,7 @@
 [ext_resource type="StyleBox" path="res://theme/button/button_normal_texture.tres" id="1"]
 [ext_resource type="StyleBox" path="res://theme/button/button_pressed_texture.tres" id="2"]
 [ext_resource type="FontFile" uid="uid://fru4c3uo56kd" path="res://fonts/W95FA.otf" id="3"]
+[ext_resource type="FontVariation" path="res://theme/fonts/W95FA_spaced.tres" id="13"]
 [ext_resource type="StyleBox" path="res://theme/panel/panel_style.tres" id="4"]
 [ext_resource type="StyleBox" path="res://theme/window/window_style.tres" id="5"]
 [ext_resource type="StyleBox" path="res://theme/titlebar/titlebar_style_active.tres" id="6"]
@@ -16,7 +17,7 @@
 [sub_resource type="StyleBoxEmpty" id="1"]
 
 [resource]
-default_font = ExtResource("3")
+default_font = ExtResource("13")
 default_font_size = 12
 Button/colors/font_color = Color(0, 0, 0, 1)
 Button/colors/font_disabled_color = Color(0.4, 0.4, 0.4, 1)

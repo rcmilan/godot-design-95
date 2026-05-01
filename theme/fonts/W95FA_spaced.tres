@@ -4,5 +4,4 @@
 
 [resource]
 base_font = ExtResource("1")
-variation_embolden = 1.0
 spacing_glyph = 1
