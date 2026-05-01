@@ -15,6 +15,16 @@ run/main_scene="uid://eul2yj6ii2t0"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ThemeSetup="*res://theme/ThemeSetup.gd"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/stretch/mode="viewport"
+
 [dotnet]
 
 project/assembly_name="design95"
@@ -26,10 +36,6 @@ theme/custom="res://theme/webcore_theme.tres"
 [physics]
 
 3d/physics_engine="Jolt Physics"
-
-[autoload]
-
-ThemeSetup="*res://theme/ThemeSetup.gd"
 
 [rendering]
 

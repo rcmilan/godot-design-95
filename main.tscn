@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://eul2yj6ii2t0"]
 
 [node name="Main" type="Panel" unique_id=102736122]
-offset_left = 529.0
-offset_top = 276.0
-offset_right = 529.0
-offset_bottom = 276.0
+offset_left = 214.0
+offset_top = 137.0
+offset_right = 214.0
+offset_bottom = 137.0
 
 [node name="Layout" type="VBoxContainer" parent="." unique_id=279076569]
 layout_mode = 1
