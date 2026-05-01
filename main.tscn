@@ -17,27 +17,7 @@ grow_vertical = 2
 [node name="MenuBar" type="Panel" parent="Layout" unique_id=1588834856]
 custom_minimum_size = Vector2(0, 22)
 layout_mode = 2
-theme_type_variation = &"MenuBar"
-
-[node name="HBox" type="HBoxContainer" parent="Layout/MenuBar" unique_id=1948158343]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="File" type="Button" parent="Layout/MenuBar/HBox" unique_id=1639946581]
-layout_mode = 2
-text = "File"
-
-[node name="Edit" type="Button" parent="Layout/MenuBar/HBox" unique_id=1352336239]
-layout_mode = 2
-text = "Edit"
-
-[node name="View" type="Button" parent="Layout/MenuBar/HBox" unique_id=1846163479]
-layout_mode = 2
-text = "View"
+theme_type_variation = &"Win95MenuBar"
 
 [node name="WorkArea" type="Control" parent="Layout" unique_id=911636198]
 layout_mode = 2
@@ -158,6 +138,7 @@ text = "Example"
 
 [node name="DescLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=787907415]
 layout_mode = 2
+custom_minimum_size = Vector2(1, 0)
 text = "This is a Windows 95 style UI system built with Godot 4."
 autowrap_mode = 3
 
