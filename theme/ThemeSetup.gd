@@ -14,3 +14,4 @@ func _ready() -> void:
 	theme.set_type_variation(&"TitleBarButton",   &"Button")
 	theme.set_type_variation(&"Win95MenuBar",      &"Panel")
 	theme.set_type_variation(&"SectionLabel",     &"Label")
+	theme.set_type_variation(&"RadioButton",      &"CheckBox")

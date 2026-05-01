@@ -2,8 +2,6 @@
 
 [ext_resource type="StyleBox" path="res://theme/button/button_normal_texture.tres" id="1"]
 [ext_resource type="StyleBox" path="res://theme/button/button_pressed_texture.tres" id="2"]
-[ext_resource type="FontFile" uid="uid://fru4c3uo56kd" path="res://fonts/W95FA.otf" id="3"]
-[ext_resource type="FontVariation" path="res://theme/fonts/W95FA_spaced.tres" id="13"]
 [ext_resource type="StyleBox" path="res://theme/panel/panel_style.tres" id="4"]
 [ext_resource type="StyleBox" path="res://theme/window/window_style.tres" id="5"]
 [ext_resource type="StyleBox" path="res://theme/titlebar/titlebar_style_active.tres" id="6"]
@@ -13,6 +11,9 @@
 [ext_resource type="StyleBox" path="res://theme/button/button_titlebar_pressed_texture.tres" id="10"]
 [ext_resource type="StyleBox" path="res://theme/lineedit/lineedit_style.tres" id="11"]
 [ext_resource type="FontVariation" path="res://theme/fonts/W95FA_section.tres" id="12"]
+[ext_resource type="FontVariation" path="res://theme/fonts/W95FA_spaced.tres" id="13"]
+[ext_resource type="Texture2D" path="res://theme/radiobutton/radio_unchecked.png" id="14"]
+[ext_resource type="Texture2D" path="res://theme/radiobutton/radio_checked.png" id="15"]
 
 [sub_resource type="StyleBoxEmpty" id="1"]
 
@@ -35,7 +36,6 @@ LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/styles/focus = ExtResource("11")
 LineEdit/styles/normal = ExtResource("11")
 LineEdit/styles/read_only = ExtResource("11")
-Win95MenuBar/styles/panel = ExtResource("8")
 Panel/styles/panel = ExtResource("4")
 SectionLabel/colors/font_color = Color(0, 0, 0, 1)
 SectionLabel/font_sizes/font_size = 13
@@ -54,4 +54,19 @@ TitleBarButton/styles/normal = ExtResource("9")
 TitleBarButton/styles/pressed = ExtResource("10")
 TitleBarInactive/styles/panel = ExtResource("7")
 TitleBarLabel/colors/font_color = Color(1, 1, 1, 1)
+Win95MenuBar/styles/panel = ExtResource("8")
 WindowPanel/styles/panel = ExtResource("5")
+RadioButton/colors/font_color = Color(0, 0, 0, 1)
+RadioButton/colors/font_focus_color = Color(0, 0, 0, 1)
+RadioButton/colors/font_hover_color = Color(0, 0, 0, 1)
+RadioButton/colors/font_pressed_color = Color(0, 0, 0, 1)
+RadioButton/icons/radio_checked = ExtResource("15")
+RadioButton/icons/radio_checked_disabled = ExtResource("15")
+RadioButton/icons/radio_unchecked = ExtResource("14")
+RadioButton/icons/radio_unchecked_disabled = ExtResource("14")
+RadioButton/styles/disabled = SubResource("1")
+RadioButton/styles/focus = SubResource("1")
+RadioButton/styles/hover = SubResource("1")
+RadioButton/styles/hover_pressed = SubResource("1")
+RadioButton/styles/normal = SubResource("1")
+RadioButton/styles/pressed = SubResource("1")

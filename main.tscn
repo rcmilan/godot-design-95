@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://eul2yj6ii2t0"]
 
+[sub_resource type="ButtonGroup" id="RadioGroup1"]
+
 [node name="Main" type="Panel" unique_id=102736122]
-offset_left = 214.0
-offset_top = 137.0
-offset_right = 214.0
-offset_bottom = 137.0
+offset_left = 302.0
+offset_top = 171.0
+offset_right = 302.0
+offset_bottom = 171.0
 
 [node name="Layout" type="VBoxContainer" parent="." unique_id=279076569]
 layout_mode = 1
@@ -137,10 +139,37 @@ theme_type_variation = &"SectionLabel"
 text = "Example"
 
 [node name="DescLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=787907415]
-layout_mode = 2
 custom_minimum_size = Vector2(1, 0)
+layout_mode = 2
 text = "This is a Windows 95 style UI system built with Godot 4."
 autowrap_mode = 3
+
+[node name="Divider2" type="HSeparator" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456001]
+layout_mode = 2
+
+[node name="OptionsLabel" type="Label" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456002]
+layout_mode = 2
+theme_type_variation = &"SectionLabel"
+text = "Options"
+
+[node name="RadioA" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456003]
+layout_mode = 2
+theme_type_variation = &"RadioButton"
+button_pressed = true
+button_group = SubResource("RadioGroup1")
+text = "Option A"
+
+[node name="RadioB" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456004]
+layout_mode = 2
+theme_type_variation = &"RadioButton"
+button_group = SubResource("RadioGroup1")
+text = "Option B"
+
+[node name="RadioC" type="CheckBox" parent="Layout/WorkArea/Window/VBox/ContentPanel/ContentVBox" unique_id=123456005]
+layout_mode = 2
+theme_type_variation = &"RadioButton"
+button_group = SubResource("RadioGroup1")
+text = "Option C"
 
 [node name="StatusBar" type="Panel" parent="Layout/WorkArea/Window/VBox" unique_id=820560241]
 custom_minimum_size = Vector2(0, 20)
