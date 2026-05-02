@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cyxlhcg2yootl"]
+
+[ext_resource type="Texture2D" path="res://theme/icon/exe_icon.png" id="1"]
+
+[node name="Browser" type="Node2D" unique_id=68873674]
+
+[node name="ExeIcon" type="Button" parent="." unique_id=87654321]
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 114.0
+offset_bottom = 114.0
+custom_minimum_size = Vector2(64, 64)
+theme_type_variation = &"Win95DesktopIcon"
+text = "program.exe"
+icon = ExtResource("1")
+expand_icon = false
+icon_alignment = 1
+vertical_icon_alignment = 0

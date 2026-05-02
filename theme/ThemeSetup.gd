@@ -17,3 +17,4 @@ func _ready() -> void:
 	theme.set_type_variation(&"RadioButton",      &"CheckBox")
 	theme.set_type_variation(&"Win95Checkbox",    &"CheckBox")
 	theme.set_type_variation(&"Win95Dropdown",    &"OptionButton")
+	theme.set_type_variation(&"Win95DesktopIcon", &"Button")

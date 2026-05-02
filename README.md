@@ -256,6 +256,40 @@ text = "Option A"
 
 ---
 
+### Win95DesktopIcon
+
+Transparent-background button that displays a user-supplied image above a white label — simulates a Win95 desktop icon (trash can, folder, `.exe`, etc.). All style states are fully transparent; the icon and text are the only visible elements.
+
+```gdscript
+var icon_btn = Button.new()
+icon_btn.theme_type_variation = &"Win95DesktopIcon"
+icon_btn.text = "Recycle Bin"
+icon_btn.icon = load("res://assets/icons/trash.png")
+icon_btn.icon_alignment = HORIZONTAL_ALIGNMENT_CENTER
+icon_btn.vertical_icon_alignment = VERTICAL_ALIGNMENT_TOP
+icon_btn.expand_icon = false
+icon_btn.custom_minimum_size = Vector2(64, 64)
+```
+
+In `.tscn` files:
+
+```
+[node name="TrashIcon" type="Button" ...]
+theme_type_variation = &"Win95DesktopIcon"
+text = "Recycle Bin"
+icon = ExtResource("your_icon_texture")
+icon_alignment = 1       # CENTER
+vertical_icon_alignment = 0   # TOP
+expand_icon = false
+custom_minimum_size = Vector2(64, 64)
+```
+
+Use inside a desktop area that has a dark or colored background — the white text is designed to sit on top of wallpaper, not on gray panels.
+
+A bundled example texture is available at `res://theme/icon/exe_icon.png` (32×32 blank paper with top-left fold and `.EXE` label). Supply your own textures for other icon types.
+
+---
+
 ### Win95Checkbox
 
 Square checkbox with a Win95 pixel-art checkmark. Independent toggle — no `ButtonGroup`.
@@ -343,6 +377,9 @@ theme/
   checkbox/
     checkbox_unchecked.png                 13×13 RGBA square, 2 px inset border
     checkbox_checked.png                   same + pixel-art checkmark
+
+  icon/
+    exe_icon.png                           32×32 RGBA — blank paper with top-left fold and ".EXE" label
 
   fonts/
     W95FA_spaced.tres                      FontVariation — default body font, spacing_glyph = 1

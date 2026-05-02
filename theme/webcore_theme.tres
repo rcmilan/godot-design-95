@@ -1,142 +1,140 @@
 [gd_resource type="Theme" format=3 uid="uid://b01rmjiy8be4k"]
 
-[ext_resource type="StyleBox"      path="res://theme/button/button_normal_texture.tres"         id="1"]
-[ext_resource type="StyleBox"      path="res://theme/button/button_pressed_texture.tres"        id="2"]
-[ext_resource type="StyleBox"      path="res://theme/button/button_titlebar_normal_texture.tres" id="3"]
-[ext_resource type="StyleBox"      path="res://theme/button/button_titlebar_pressed_texture.tres" id="4"]
-[ext_resource type="StyleBox"      path="res://theme/panel/panel_style.tres"                    id="5"]
-[ext_resource type="StyleBox"      path="res://theme/window/window_style.tres"                  id="6"]
-[ext_resource type="StyleBox"      path="res://theme/titlebar/titlebar_style_active.tres"       id="7"]
-[ext_resource type="StyleBox"      path="res://theme/titlebar/titlebar_style_inactive.tres"     id="8"]
-[ext_resource type="StyleBox"      path="res://theme/menubar/menubar_style.tres"                id="9"]
-[ext_resource type="StyleBox"      path="res://theme/lineedit/lineedit_style.tres"              id="10"]
-[ext_resource type="StyleBox"      path="res://theme/dropdown/dropdown_style.tres"              id="11"]
-[ext_resource type="FontVariation" path="res://theme/fonts/W95FA_spaced.tres"                   id="12"]
-[ext_resource type="FontVariation" path="res://theme/fonts/W95FA_section.tres"                  id="13"]
-[ext_resource type="Texture2D"     path="res://theme/radiobutton/radio_unchecked.png"           id="14"]
-[ext_resource type="Texture2D"     path="res://theme/radiobutton/radio_checked.png"             id="15"]
-[ext_resource type="Texture2D"     path="res://theme/checkbox/checkbox_unchecked.png"           id="16"]
-[ext_resource type="Texture2D"     path="res://theme/checkbox/checkbox_checked.png"             id="17"]
-[ext_resource type="Texture2D"     path="res://theme/dropdown/dropdown_arrow.png"               id="18"]
+[ext_resource type="StyleBox" path="res://theme/button/button_normal_texture.tres" id="1"]
+[ext_resource type="StyleBox" path="res://theme/button/button_pressed_texture.tres" id="2"]
+[ext_resource type="StyleBox" path="res://theme/button/button_titlebar_normal_texture.tres" id="3"]
+[ext_resource type="StyleBox" path="res://theme/button/button_titlebar_pressed_texture.tres" id="4"]
+[ext_resource type="StyleBox" path="res://theme/panel/panel_style.tres" id="5"]
+[ext_resource type="StyleBox" path="res://theme/window/window_style.tres" id="6"]
+[ext_resource type="StyleBox" path="res://theme/titlebar/titlebar_style_active.tres" id="7"]
+[ext_resource type="StyleBox" path="res://theme/titlebar/titlebar_style_inactive.tres" id="8"]
+[ext_resource type="StyleBox" path="res://theme/menubar/menubar_style.tres" id="9"]
+[ext_resource type="StyleBox" path="res://theme/lineedit/lineedit_style.tres" id="10"]
+[ext_resource type="StyleBox" path="res://theme/dropdown/dropdown_style.tres" id="11"]
+[ext_resource type="FontVariation" path="res://theme/fonts/W95FA_spaced.tres" id="12"]
+[ext_resource type="FontVariation" uid="uid://dgyr02eglmw04" path="res://theme/fonts/W95FA_section.tres" id="13"]
+[ext_resource type="Texture2D" uid="uid://xyycg0pxq6px" path="res://theme/radiobutton/radio_unchecked.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://lwhdqlq1hfgm" path="res://theme/radiobutton/radio_checked.png" id="15"]
+[ext_resource type="Texture2D" uid="uid://cphb874vqwglu" path="res://theme/checkbox/checkbox_unchecked.png" id="16"]
+[ext_resource type="Texture2D" uid="uid://duwftn0riwlt7" path="res://theme/checkbox/checkbox_checked.png" id="17"]
+[ext_resource type="Texture2D" uid="uid://b8vv45br5ktul" path="res://theme/dropdown/dropdown_arrow.png" id="18"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_bare"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_padded"]
-content_margin_left   = 1.0
-content_margin_top    = 1.0
-content_margin_right  = 1.0
+content_margin_left = 1.0
+content_margin_top = 1.0
+content_margin_right = 1.0
 content_margin_bottom = 1.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_popup"]
-bg_color              = Color(1, 1, 1, 1)
-border_width_left     = 1
-border_width_top      = 1
-border_width_right    = 1
-border_width_bottom   = 1
-border_color          = Color(0, 0, 0, 1)
-content_margin_left   = 2.0
-content_margin_top    = 2.0
-content_margin_right  = 2.0
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
 content_margin_bottom = 2.0
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
 
 [resource]
-default_font      = ExtResource("12")
+default_font = ExtResource("12")
 default_font_size = 12
-
-Label/colors/font_color  = Color(0, 0, 0, 1)
-Label/styles/normal      = SubResource("StyleBoxEmpty_padded")
-
-SectionLabel/colors/font_color   = Color(0, 0, 0, 1)
-SectionLabel/fonts/font          = ExtResource("13")
-SectionLabel/font_sizes/font_size = 13
-
-Button/colors/font_color              = Color(0, 0, 0, 1)
-Button/colors/font_disabled_color     = Color(0.4, 0.4, 0.4, 1)
-Button/colors/font_focus_color        = Color(0, 0, 0, 1)
-Button/colors/font_hover_color        = Color(0, 0, 0, 1)
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/colors/font_disabled_color = Color(0.4, 0.4, 0.4, 1)
+Button/colors/font_focus_color = Color(0, 0, 0, 1)
+Button/colors/font_hover_color = Color(0, 0, 0, 1)
 Button/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-Button/colors/font_pressed_color      = Color(0, 0, 0, 1)
-Button/styles/normal       = ExtResource("1")
-Button/styles/hover        = ExtResource("1")
-Button/styles/disabled     = ExtResource("1")
-Button/styles/pressed      = ExtResource("2")
+Button/colors/font_pressed_color = Color(0, 0, 0, 1)
+Button/styles/disabled = ExtResource("1")
+Button/styles/focus = SubResource("StyleBoxEmpty_bare")
+Button/styles/hover = ExtResource("1")
 Button/styles/hover_pressed = ExtResource("2")
-Button/styles/focus        = SubResource("StyleBoxEmpty_bare")
-
-LineEdit/colors/font_color             = Color(0, 0, 0, 1)
+Button/styles/normal = ExtResource("1")
+Button/styles/pressed = ExtResource("2")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/styles/normal = SubResource("StyleBoxEmpty_padded")
+LineEdit/colors/font_color = Color(0, 0, 0, 1)
 LineEdit/colors/font_placeholder_color = Color(0.37, 0.37, 0.37, 1)
-LineEdit/styles/normal    = ExtResource("10")
-LineEdit/styles/focus     = ExtResource("10")
+LineEdit/styles/focus = ExtResource("10")
+LineEdit/styles/normal = ExtResource("10")
 LineEdit/styles/read_only = ExtResource("10")
-
 Panel/styles/panel = ExtResource("5")
-
-WindowPanel/styles/panel = ExtResource("6")
-
-TitleBarActive/styles/panel   = ExtResource("7")
-TitleBarInactive/styles/panel = ExtResource("8")
-
-TitleBarLabel/colors/font_color = Color(1, 1, 1, 1)
-
-TitleBarButton/colors/font_color               = Color(0, 0, 0, 1)
-TitleBarButton/colors/font_focus_color         = Color(0, 0, 0, 1)
-TitleBarButton/colors/font_hover_color         = Color(0, 0, 0, 1)
-TitleBarButton/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
-TitleBarButton/colors/font_pressed_color       = Color(0, 0, 0, 1)
-TitleBarButton/styles/normal       = ExtResource("3")
-TitleBarButton/styles/hover        = ExtResource("3")
-TitleBarButton/styles/disabled     = ExtResource("3")
-TitleBarButton/styles/pressed      = ExtResource("4")
-TitleBarButton/styles/hover_pressed = ExtResource("4")
-TitleBarButton/styles/focus        = SubResource("StyleBoxEmpty_bare")
-
-Win95MenuBar/styles/panel = ExtResource("9")
-
-RadioButton/colors/font_color        = Color(0, 0, 0, 1)
-RadioButton/colors/font_focus_color  = Color(0, 0, 0, 1)
-RadioButton/colors/font_hover_color  = Color(0, 0, 0, 1)
-RadioButton/colors/font_pressed_color = Color(0, 0, 0, 1)
-RadioButton/icons/radio_checked           = ExtResource("15")
-RadioButton/icons/radio_checked_disabled  = ExtResource("15")
-RadioButton/icons/radio_unchecked         = ExtResource("14")
-RadioButton/icons/radio_unchecked_disabled = ExtResource("14")
-RadioButton/styles/normal       = SubResource("StyleBoxEmpty_bare")
-RadioButton/styles/hover        = SubResource("StyleBoxEmpty_bare")
-RadioButton/styles/pressed      = SubResource("StyleBoxEmpty_bare")
-RadioButton/styles/focus        = SubResource("StyleBoxEmpty_bare")
-RadioButton/styles/disabled     = SubResource("StyleBoxEmpty_bare")
-RadioButton/styles/hover_pressed = SubResource("StyleBoxEmpty_bare")
-
-Win95Checkbox/colors/font_color         = Color(0, 0, 0, 1)
-Win95Checkbox/colors/font_focus_color   = Color(0, 0, 0, 1)
-Win95Checkbox/colors/font_hover_color   = Color(0, 0, 0, 1)
-Win95Checkbox/colors/font_pressed_color = Color(0, 0, 0, 1)
-Win95Checkbox/icons/checked            = ExtResource("17")
-Win95Checkbox/icons/checked_disabled   = ExtResource("17")
-Win95Checkbox/icons/unchecked          = ExtResource("16")
-Win95Checkbox/icons/unchecked_disabled = ExtResource("16")
-Win95Checkbox/styles/normal       = SubResource("StyleBoxEmpty_bare")
-Win95Checkbox/styles/hover        = SubResource("StyleBoxEmpty_bare")
-Win95Checkbox/styles/pressed      = SubResource("StyleBoxEmpty_bare")
-Win95Checkbox/styles/focus        = SubResource("StyleBoxEmpty_bare")
-Win95Checkbox/styles/disabled     = SubResource("StyleBoxEmpty_bare")
-Win95Checkbox/styles/hover_pressed = SubResource("StyleBoxEmpty_bare")
-
-Win95Dropdown/colors/font_color          = Color(0, 0, 0, 1)
-Win95Dropdown/colors/font_disabled_color = Color(0.4, 0.4, 0.4, 1)
-Win95Dropdown/colors/font_focus_color    = Color(0, 0, 0, 1)
-Win95Dropdown/colors/font_hover_color    = Color(0, 0, 0, 1)
-Win95Dropdown/colors/font_pressed_color  = Color(0, 0, 0, 1)
-Win95Dropdown/icons/arrow                = ExtResource("18")
-Win95Dropdown/constants/arrow_margin     = 4
-Win95Dropdown/styles/normal    = ExtResource("11")
-Win95Dropdown/styles/hover     = ExtResource("11")
-Win95Dropdown/styles/pressed   = ExtResource("11")
-Win95Dropdown/styles/focus     = ExtResource("11")
-Win95Dropdown/styles/disabled  = ExtResource("11")
-
-PopupMenu/colors/font_color             = Color(0, 0, 0, 1)
-PopupMenu/colors/font_disabled_color    = Color(0.4, 0.4, 0.4, 1)
-PopupMenu/colors/font_hover_color       = Color(1, 1, 1, 1)
 PopupMenu/colors/font_accelerator_color = Color(0, 0, 0, 0.75)
-PopupMenu/styles/panel                  = SubResource("StyleBoxFlat_popup")
+PopupMenu/colors/font_color = Color(0, 0, 0, 1)
+PopupMenu/colors/font_disabled_color = Color(0.4, 0.4, 0.4, 1)
+PopupMenu/colors/font_hover_color = Color(1, 1, 1, 1)
+PopupMenu/styles/panel = SubResource("StyleBoxFlat_popup")
+RadioButton/colors/font_color = Color(0, 0, 0, 1)
+RadioButton/colors/font_focus_color = Color(0, 0, 0, 1)
+RadioButton/colors/font_hover_color = Color(0, 0, 0, 1)
+RadioButton/colors/font_pressed_color = Color(0, 0, 0, 1)
+RadioButton/icons/radio_checked = ExtResource("15")
+RadioButton/icons/radio_checked_disabled = ExtResource("15")
+RadioButton/icons/radio_unchecked = ExtResource("14")
+RadioButton/icons/radio_unchecked_disabled = ExtResource("14")
+RadioButton/styles/disabled = SubResource("StyleBoxEmpty_bare")
+RadioButton/styles/focus = SubResource("StyleBoxEmpty_bare")
+RadioButton/styles/hover = SubResource("StyleBoxEmpty_bare")
+RadioButton/styles/hover_pressed = SubResource("StyleBoxEmpty_bare")
+RadioButton/styles/normal = SubResource("StyleBoxEmpty_bare")
+RadioButton/styles/pressed = SubResource("StyleBoxEmpty_bare")
+SectionLabel/colors/font_color = Color(0, 0, 0, 1)
+SectionLabel/font_sizes/font_size = 13
+SectionLabel/fonts/font = ExtResource("13")
+TitleBarActive/styles/panel = ExtResource("7")
+TitleBarButton/colors/font_color = Color(0, 0, 0, 1)
+TitleBarButton/colors/font_focus_color = Color(0, 0, 0, 1)
+TitleBarButton/colors/font_hover_color = Color(0, 0, 0, 1)
+TitleBarButton/colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+TitleBarButton/colors/font_pressed_color = Color(0, 0, 0, 1)
+TitleBarButton/styles/disabled = ExtResource("3")
+TitleBarButton/styles/focus = SubResource("StyleBoxEmpty_bare")
+TitleBarButton/styles/hover = ExtResource("3")
+TitleBarButton/styles/hover_pressed = ExtResource("4")
+TitleBarButton/styles/normal = ExtResource("3")
+TitleBarButton/styles/pressed = ExtResource("4")
+TitleBarInactive/styles/panel = ExtResource("8")
+TitleBarLabel/colors/font_color = Color(1, 1, 1, 1)
+Win95Checkbox/colors/font_color = Color(0, 0, 0, 1)
+Win95Checkbox/colors/font_focus_color = Color(0, 0, 0, 1)
+Win95Checkbox/colors/font_hover_color = Color(0, 0, 0, 1)
+Win95Checkbox/colors/font_pressed_color = Color(0, 0, 0, 1)
+Win95Checkbox/icons/checked = ExtResource("17")
+Win95Checkbox/icons/checked_disabled = ExtResource("17")
+Win95Checkbox/icons/unchecked = ExtResource("16")
+Win95Checkbox/icons/unchecked_disabled = ExtResource("16")
+Win95Checkbox/styles/disabled = SubResource("StyleBoxEmpty_bare")
+Win95Checkbox/styles/focus = SubResource("StyleBoxEmpty_bare")
+Win95Checkbox/styles/hover = SubResource("StyleBoxEmpty_bare")
+Win95Checkbox/styles/hover_pressed = SubResource("StyleBoxEmpty_bare")
+Win95Checkbox/styles/normal = SubResource("StyleBoxEmpty_bare")
+Win95Checkbox/styles/pressed = SubResource("StyleBoxEmpty_bare")
+Win95DesktopIcon/colors/font_color = Color(1, 1, 1, 1)
+Win95DesktopIcon/colors/font_disabled_color = Color(0.6, 0.6, 0.6, 1)
+Win95DesktopIcon/colors/font_focus_color = Color(1, 1, 1, 1)
+Win95DesktopIcon/colors/font_hover_color = Color(1, 1, 1, 1)
+Win95DesktopIcon/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Win95DesktopIcon/colors/font_pressed_color = Color(1, 1, 1, 1)
+Win95DesktopIcon/styles/disabled = SubResource("StyleBoxEmpty_bare")
+Win95DesktopIcon/styles/focus = SubResource("StyleBoxEmpty_bare")
+Win95DesktopIcon/styles/hover = SubResource("StyleBoxEmpty_bare")
+Win95DesktopIcon/styles/hover_pressed = SubResource("StyleBoxEmpty_bare")
+Win95DesktopIcon/styles/normal = SubResource("StyleBoxEmpty_bare")
+Win95DesktopIcon/styles/pressed = SubResource("StyleBoxEmpty_bare")
+Win95Dropdown/colors/font_color = Color(0, 0, 0, 1)
+Win95Dropdown/colors/font_disabled_color = Color(0.4, 0.4, 0.4, 1)
+Win95Dropdown/colors/font_focus_color = Color(0, 0, 0, 1)
+Win95Dropdown/colors/font_hover_color = Color(0, 0, 0, 1)
+Win95Dropdown/colors/font_pressed_color = Color(0, 0, 0, 1)
+Win95Dropdown/constants/arrow_margin = 4
+Win95Dropdown/icons/arrow = ExtResource("18")
+Win95Dropdown/styles/disabled = ExtResource("11")
+Win95Dropdown/styles/focus = ExtResource("11")
+Win95Dropdown/styles/hover = ExtResource("11")
+Win95Dropdown/styles/normal = ExtResource("11")
+Win95Dropdown/styles/pressed = ExtResource("11")
+Win95MenuBar/styles/panel = ExtResource("9")
+WindowPanel/styles/panel = ExtResource("6")
