@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://cyxlhcg2yootl"]
 
 [ext_resource type="Texture2D" path="res://theme/icon/exe_icon.png" id="1"]
+[ext_resource type="Script" path="res://browser.gd" id="2"]
 
 [node name="Browser" type="Node2D" unique_id=68873674]
+script = ExtResource("2")
 
 [node name="ExeIcon" type="Button" parent="." unique_id=87654321]
 offset_left = 50.0
@@ -16,3 +18,98 @@ icon = ExtResource("1")
 expand_icon = false
 icon_alignment = 1
 vertical_icon_alignment = 0
+
+[node name="BrowserWindow" type="Panel" parent="." unique_id=201234567]
+visible = false
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 500.0
+offset_bottom = 380.0
+theme_type_variation = &"WindowPanel"
+
+[node name="VBox" type="VBoxContainer" parent="BrowserWindow" unique_id=201234568]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = -2.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleBar" type="Panel" parent="BrowserWindow/VBox" unique_id=201234569]
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme_type_variation = &"TitleBarActive"
+
+[node name="TitleHBox" type="HBoxContainer" parent="BrowserWindow/VBox/TitleBar" unique_id=201234570]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_right = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="BrowserWindow/VBox/TitleBar/TitleHBox" unique_id=201234571]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_type_variation = &"TitleBarLabel"
+text = "Internet Explorer"
+
+[node name="Close" type="Button" parent="BrowserWindow/VBox/TitleBar/TitleHBox" unique_id=201234572]
+custom_minimum_size = Vector2(16, 0)
+layout_mode = 2
+theme_type_variation = &"TitleBarButton"
+text = "X"
+
+[node name="Toolbar" type="Panel" parent="BrowserWindow/VBox" unique_id=201234573]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+theme_type_variation = &"Win95MenuBar"
+
+[node name="ToolHBox" type="HBoxContainer" parent="BrowserWindow/VBox/Toolbar" unique_id=201234574]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 3.0
+offset_right = -4.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="UrlBar" type="LineEdit" parent="BrowserWindow/VBox/Toolbar/ToolHBox" unique_id=201234575]
+layout_mode = 2
+size_flags_horizontal = 3
+custom_minimum_size = Vector2(1, 0)
+editable = false
+text = "example.com"
+
+[node name="Refresh" type="Button" parent="BrowserWindow/VBox/Toolbar/ToolHBox" unique_id=201234576]
+layout_mode = 2
+text = "Refresh"
+
+[node name="ContentArea" type="Panel" parent="BrowserWindow/VBox" unique_id=201234577]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ContentVBox" type="VBoxContainer" parent="BrowserWindow/VBox/ContentArea" unique_id=201234578]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = -8.0
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HelloWorld" type="Label" parent="BrowserWindow/VBox/ContentArea/ContentVBox" unique_id=201234579]
+layout_mode = 2
+text = "Hello World"
