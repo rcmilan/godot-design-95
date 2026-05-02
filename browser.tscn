@@ -1,21 +1,46 @@
 [gd_scene format=3 uid="uid://cyxlhcg2yootl"]
 
-[ext_resource type="Texture2D" path="res://theme/icon/exe_icon.png" id="1"]
-[ext_resource type="Script" path="res://browser.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://coupdd1gpsdfi" path="res://theme/icon/exe_icon.png" id="1"]
+[ext_resource type="Script" uid="uid://6coie5tvxuox" path="res://browser.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://c4f78ulnby6uc" path="res://theme/icon/dll_icon.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://c1buw54cknrjr" path="res://theme/icon/bat_icon.png" id="4"]
 
 [node name="Browser" type="Node2D" unique_id=68873674]
 script = ExtResource("2")
 
 [node name="ExeIcon" type="Button" parent="." unique_id=87654321]
+custom_minimum_size = Vector2(64, 64)
 offset_left = 50.0
 offset_top = 50.0
 offset_right = 114.0
 offset_bottom = 114.0
-custom_minimum_size = Vector2(64, 64)
 theme_type_variation = &"Win95DesktopIcon"
 text = "program.exe"
 icon = ExtResource("1")
-expand_icon = false
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="DllIcon" type="Button" parent="." unique_id=301234567]
+custom_minimum_size = Vector2(64, 64)
+offset_left = 112.0
+offset_top = 171.0
+offset_right = 176.0
+offset_bottom = 237.0
+theme_type_variation = &"Win95DesktopIcon"
+text = "helper.dll"
+icon = ExtResource("3")
+icon_alignment = 1
+vertical_icon_alignment = 0
+
+[node name="BatIcon" type="Button" parent="." unique_id=301234568]
+custom_minimum_size = Vector2(64, 64)
+offset_left = 202.0
+offset_top = 63.0
+offset_right = 266.0
+offset_bottom = 129.0
+theme_type_variation = &"Win95DesktopIcon"
+text = "script.bat"
+icon = ExtResource("4")
 icon_alignment = 1
 vertical_icon_alignment = 0
 
@@ -84,11 +109,11 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="UrlBar" type="LineEdit" parent="BrowserWindow/VBox/Toolbar/ToolHBox" unique_id=201234575]
+custom_minimum_size = Vector2(1, 0)
 layout_mode = 2
 size_flags_horizontal = 3
-custom_minimum_size = Vector2(1, 0)
-editable = false
 text = "example.com"
+editable = false
 
 [node name="Refresh" type="Button" parent="BrowserWindow/VBox/Toolbar/ToolHBox" unique_id=201234576]
 layout_mode = 2

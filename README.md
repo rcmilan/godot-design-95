@@ -380,6 +380,8 @@ theme/
 
   icon/
     exe_icon.png                           32×32 RGBA — blank paper with top-left fold and ".EXE" label
+    dll_icon.png                           32×32 RGBA — same shape, ".DLL" label
+    bat_icon.png                           32×32 RGBA — same shape, ".BAT" label
 
   fonts/
     W95FA_spaced.tres                      FontVariation — default body font, spacing_glyph = 1
