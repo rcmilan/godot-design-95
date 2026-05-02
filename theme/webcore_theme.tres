@@ -16,6 +16,9 @@
 [ext_resource type="Texture2D" path="res://theme/radiobutton/radio_checked.png" id="15"]
 [ext_resource type="Texture2D" path="res://theme/checkbox/checkbox_unchecked.png" id="16"]
 [ext_resource type="Texture2D" path="res://theme/checkbox/checkbox_checked.png" id="17"]
+[ext_resource type="StyleBox" path="res://theme/dropdown/dropdown_style.tres" id="18"]
+[ext_resource type="StyleBox" path="res://theme/dropdown/dropdown_popup_style.tres" id="19"]
+[ext_resource type="Texture2D" path="res://theme/dropdown/dropdown_arrow.png" id="20"]
 
 [sub_resource type="StyleBoxEmpty" id="1"]
 
@@ -35,6 +38,7 @@ Button/styles/hover_pressed = ExtResource("2")
 Button/styles/normal = ExtResource("1")
 Button/styles/pressed = ExtResource("2")
 LineEdit/colors/font_color = Color(0, 0, 0, 1)
+LineEdit/colors/font_placeholder_color = Color(0.37, 0.37, 0.37, 1)
 LineEdit/styles/focus = ExtResource("11")
 LineEdit/styles/normal = ExtResource("11")
 LineEdit/styles/read_only = ExtResource("11")
@@ -86,3 +90,20 @@ Win95Checkbox/styles/hover = SubResource("1")
 Win95Checkbox/styles/hover_pressed = SubResource("1")
 Win95Checkbox/styles/normal = SubResource("1")
 Win95Checkbox/styles/pressed = SubResource("1")
+Win95Dropdown/colors/font_color = Color(0, 0, 0, 1)
+Win95Dropdown/colors/font_disabled_color = Color(0.4, 0.4, 0.4, 1)
+Win95Dropdown/colors/font_focus_color = Color(0, 0, 0, 1)
+Win95Dropdown/colors/font_hover_color = Color(0, 0, 0, 1)
+Win95Dropdown/colors/font_pressed_color = Color(0, 0, 0, 1)
+Win95Dropdown/icons/arrow = ExtResource("20")
+Win95Dropdown/constants/arrow_margin = 4
+Win95Dropdown/styles/disabled = ExtResource("18")
+Win95Dropdown/styles/focus = ExtResource("18")
+Win95Dropdown/styles/hover = ExtResource("18")
+Win95Dropdown/styles/normal = ExtResource("18")
+Win95Dropdown/styles/pressed = ExtResource("18")
+PopupMenu/colors/font_color = Color(0, 0, 0, 1)
+PopupMenu/colors/font_disabled_color = Color(0.4, 0.4, 0.4, 1)
+PopupMenu/colors/font_hover_color = Color(1, 1, 1, 1)
+PopupMenu/colors/font_accelerator_color = Color(0, 0, 0, 0.75)
+PopupMenu/styles/panel = ExtResource("19")
