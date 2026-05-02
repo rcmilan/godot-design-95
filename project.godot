@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="design95"
-run/main_scene="uid://eul2yj6ii2t0"
+run/main_scene="uid://cyxlhcg2yootl"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
